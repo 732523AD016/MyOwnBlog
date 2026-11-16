@@ -1,0 +1,102 @@
+
+.admin-stat-card {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 18px;
+    background: var(--white);
+    border: 1px solid var(--line);
+}
+
+.admin-stat-card p {
+    margin: 0;
+    font-size: 13px;
+    color: var(--muted);
+}
+
+.admin-stat-card h2 {
+    margin: 0;
+    font-size: 26px;
+}
+
+.stat-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    font-size: 18px;
+}
+
+.stat-icon.purple { background: var(--purple-bg); color: var(--purple); }
+.stat-icon.green { background: var(--green-bg); color: var(--green); }
+.stat-icon.orange { background: var(--amber-bg); color: var(--amber); }
+.stat-icon.blue { background: var(--blue-bg); color: var(--blue); }
+.stat-icon.pink { background: var(--pink-bg); color: var(--pink); }
+
+.admin-table-wrapper,
+.admin-post-table-wrap {
+    overflow-x: auto;
+}
+
+.admin-table,
+.admin-post-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+.admin-table th,
+.admin-post-table th {
+    padding: 12px 14px;
+    text-align: left;
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--muted);
+    border-bottom: 1px solid var(--ink);
+}
+
+.admin-table td,
+.admin-post-table td {
+    padding: 14px;
+    border-bottom: 1px solid var(--line);
+    vertical-align: middle;
+}
+
+.admin-post-title {
+    font-weight: 400;
+}
+
+.admin-empty {
+    padding: 30px;
+    text-align: center;
+    color: var(--muted);
+}
+
+.post-status,
+.admin-status {
+    display: inline-block;
+    padding: 3px 12px;
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: capitalize;
+    background: var(--soft);
+    color: var(--text);
+}
+
+.post-status.published,
+.admin-status.published {
+    background: var(--green-bg);
+    color: var(--green);
+}
+
+.post-status.draft,
+.admin-status.draft {
+    background: var(--amber-bg);
+    color: var(--amber);
+}
+
+.admin-status.scheduled {
+    background: var(--blue-bg);
+    color: var(--blue);
+}

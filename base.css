@@ -1,0 +1,290 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+:root {
+    --ink: #111111;
+    --text: #333333;
+    --muted: #777777;
+    --line: #e5e5e5;
+    --soft: #f5f5f5;
+    --white: #ffffff;
+
+    --green: #1f7a4d;
+    --green-bg: #e8f5ee;
+    --red: #b42318;
+    --red-bg: #fdecea;
+    --amber: #a15c07;
+    --amber-bg: #fff4e0;
+    --blue: #1d4ed8;
+    --blue-bg: #e8efff;
+    --purple: #6d28d9;
+    --purple-bg: #f1eafe;
+    --pink: #be185d;
+    --pink-bg: #fde8f1;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Poppins", Arial, sans-serif;
+    color: var(--ink);
+    background: var(--white);
+    line-height: 1.6;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+h1, h2, h3, h4, p {
+    margin-top: 0;
+}
+
+h1, h2, h3, h4 {
+    font-weight: 700;
+}
+
+strong,
+b {
+    font-weight: 400;
+}
+
+button,
+input,
+select,
+textarea {
+    font-family: inherit;
+    font-size: 14px;
+}
+
+button {
+    cursor: pointer;
+}
+
+button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+.error-message,
+.success-message,
+.admin-error,
+.edit-error-message,
+.edit-success-message {
+    padding: 12px 16px;
+    margin-bottom: 16px;
+    font-size: 14px;
+    border-left: 3px solid;
+}
+
+.error-message,
+.admin-error,
+.edit-error-message {
+    background: var(--red-bg);
+    color: var(--red);
+    border-color: var(--red);
+}
+
+.success-message,
+.edit-success-message {
+    background: var(--green-bg);
+    color: var(--green);
+    border-color: var(--green);
+}
+.loading-spinner,
+.admin-spinner,
+.admin-loader {
+    width: 36px;
+    height: 36px;
+    border: 3px solid var(--line);
+    border-top-color: var(--ink);
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.blog-loading,
+.edit-loading,
+.tag-loading,
+.admin-loading,
+.admin-posts-loading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    min-height: 50vh;
+    color: var(--muted);
+}
+.load-more-btn,
+.login-submit-btn,
+.register-submit,
+.publish-btn,
+.edit-update-button,
+.admin-create-btn,
+.not-found-home-btn,
+.details-back-btn,
+.tag-explore-button,
+.category-empty a,
+.category-bottom a,
+.tag-empty a,
+.tag-error button,
+.blog-list-empty button,
+.blog-error a,
+.edit-error a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 12px 24px;
+    background: var(--ink);
+    color: var(--white);
+    border: 1px solid var(--ink);
+    font-weight: 400;
+    font-size: 14px;
+    transition: background 0.2s, color 0.2s;
+}
+
+.load-more-btn:hover,
+.login-submit-btn:hover,
+.register-submit:hover,
+.publish-btn:hover,
+.edit-update-button:hover,
+.admin-create-btn:hover,
+.not-found-home-btn:hover,
+.details-back-btn:hover,
+.tag-explore-button:hover,
+.category-empty a:hover,
+.category-bottom a:hover,
+.tag-empty a:hover,
+.tag-error button:hover,
+.blog-list-empty button:hover,
+.blog-error a:hover,
+.edit-error a:hover {
+    background: var(--white);
+    color: var(--ink);
+}
+.not-found-blog-btn,
+.draft-btn,
+.edit-cancel-button,
+.back-dashboard-btn,
+.remove-image-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 12px 24px;
+    background: var(--white);
+    color: var(--ink);
+    border: 1px solid var(--ink);
+    font-weight: 400;
+    transition: background 0.2s, color 0.2s;
+}
+
+.not-found-blog-btn:hover,
+.draft-btn:hover,
+.edit-cancel-button:hover,
+.back-dashboard-btn:hover,
+.remove-image-btn:hover {
+    background: var(--ink);
+    color: var(--white);
+}
+.list-hero-tag,
+.category-label,
+.tag-label,
+.all-blogs-heading span,
+.category-heading span,
+.tag-section-heading span,
+.related-heading span,
+.admin-eyebrow,
+.admin-subtitle,
+.create-blog-label,
+.login-form-heading span,
+.register-heading span,
+.not-found-label {
+    display: block;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: var(--muted);
+    margin-bottom: 8px;
+}
+.list-image-placeholder,
+.category-placeholder,
+.tag-image-placeholder,
+.admin-no-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--soft);
+    color: var(--muted);
+}
+.editor-card input:not([type="checkbox"]):not([type="file"]),
+.editor-card select,
+.editor-card textarea,
+.edit-field input:not([type="file"]),
+.edit-field select,
+.edit-field textarea,
+.edit-tag-form input,
+.admin-post-filters select {
+    width: 100%;
+    padding: 11px 14px;
+    border: 1px solid var(--line);
+    background: var(--white);
+    color: var(--ink);
+    outline: none;
+}
+
+.editor-card input:focus,
+.editor-card select:focus,
+.editor-card textarea:focus,
+.edit-field input:focus,
+.edit-field select:focus,
+.edit-field textarea:focus,
+.edit-tag-form input:focus {
+    border-color: var(--ink);
+}
+
+textarea {
+    resize: vertical;
+}
+.details-author-avatar,
+.author-card-avatar,
+.tag-author-avatar,
+.admin-avatar,
+.avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--ink);
+    color: var(--white);
+    border-radius: 50%;
+    font-weight: 400;
+}
+.blog-error,
+.edit-error {
+    max-width: 480px;
+    margin: 80px auto;
+    padding: 0 24px;
+    text-align: center;
+}
+
+.blog-error p,
+.edit-error p {
+    margin-bottom: 20px;
+    color: var(--muted);
+}

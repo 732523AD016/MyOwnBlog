@@ -1,0 +1,276 @@
+
+.edit-blog-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 32px 24px 60px;
+}
+
+.edit-blog-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.edit-back-link {
+    display: inline-block;
+    margin-bottom: 12px;
+    font-size: 13px;
+    color: var(--muted);
+}
+
+.edit-back-link:hover {
+    color: var(--ink);
+}
+
+.edit-blog-header h1 {
+    margin-bottom: 4px;
+    font-size: 30px;
+}
+
+.edit-blog-header p {
+    margin: 0;
+    color: var(--muted);
+}
+
+.edit-status-badge {
+    padding: 6px 16px;
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: capitalize;
+    background: var(--soft);
+    color: var(--text);
+}
+
+.edit-status-badge.published {
+    background: var(--green-bg);
+    color: var(--green);
+}
+
+.edit-status-badge.draft {
+    background: var(--amber-bg);
+    color: var(--amber);
+}
+
+.edit-blog-form {
+    display: grid;
+    grid-template-columns: 1fr 340px;
+    align-items: start;
+    gap: 24px;
+}
+
+.edit-main-column,
+.edit-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.edit-panel {
+    padding: 24px;
+    background: var(--white);
+    border: 1px solid var(--line);
+}
+
+.edit-panel-heading {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    margin-bottom: 20px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid var(--line);
+}
+
+.edit-panel-heading > span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    flex-shrink: 0;
+    background: var(--ink);
+    color: var(--white);
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.edit-panel-heading h2 {
+    margin: 0;
+    font-size: 17px;
+}
+
+.edit-panel-heading p {
+    margin: 0;
+    font-size: 13px;
+    color: var(--muted);
+}
+
+.edit-field {
+    margin-bottom: 16px;
+}
+
+.edit-field label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.edit-field-note {
+    display: block;
+    margin-top: 4px;
+    text-align: right;
+    font-size: 12px;
+    color: var(--muted);
+}
+
+.edit-image-preview {
+    margin-bottom: 14px;
+}
+
+.edit-image-preview img {
+    width: 100%;
+    max-height: 260px;
+    object-fit: cover;
+}
+
+.edit-upload-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    padding: 28px 16px;
+    border: 1px dashed #bbbbbb;
+    text-align: center;
+    cursor: pointer;
+}
+
+.edit-upload-area:hover {
+    border-color: var(--ink);
+}
+
+.edit-upload-area input {
+    display: none;
+}
+
+.edit-upload-icon {
+    font-size: 24px;
+}
+
+.edit-upload-area small {
+    color: var(--muted);
+}
+
+.edit-tag-form {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 12px;
+}
+
+.edit-tag-form button {
+    width: 44px;
+    border: none;
+    background: var(--ink);
+    color: var(--white);
+    font-size: 18px;
+}
+
+.edit-tag-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.edit-tag-list span {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 10px;
+    background: var(--soft);
+    font-size: 13px;
+}
+
+.edit-tag-list button {
+    border: none;
+    background: none;
+    font-size: 16px;
+    line-height: 1;
+    color: var(--muted);
+}
+
+.edit-tag-list button:hover {
+    color: var(--red);
+}
+
+.edit-slug-preview {
+    padding: 10px 14px;
+    background: var(--soft);
+    font-size: 13px;
+}
+
+.edit-slug-preview span {
+    font-size: 11px;
+    letter-spacing: 1px;
+    color: var(--muted);
+}
+
+.edit-slug-preview p {
+    margin: 0;
+    word-break: break-all;
+}
+
+.edit-status-options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.edit-status-options label {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 14px;
+    border: 1px solid var(--line);
+    cursor: pointer;
+}
+
+.edit-status-options label.selected {
+    border-color: var(--ink);
+    background: var(--soft);
+}
+
+.edit-status-options input {
+    accent-color: var(--ink);
+}
+
+.edit-status-options span {
+    display: flex;
+    flex-direction: column;
+}
+
+.edit-status-options small {
+    color: var(--muted);
+}
+
+.edit-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.edit-message {
+    margin-bottom: 20px;
+}
+@media (max-width: 1000px) {
+    .edit-blog-form {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .edit-blog-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

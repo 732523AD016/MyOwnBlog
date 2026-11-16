@@ -1,0 +1,252 @@
+
+.register-page {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.register-info {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 40px 48px;
+    background: var(--ink);
+    color: var(--white);
+}
+
+.register-logo {
+    position: relative;
+    z-index: 1;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.register-logo span {
+    color: #999999;
+}
+
+.register-info-content {
+    position: relative;
+    z-index: 1;
+    max-width: 460px;
+}
+
+.register-small-heading {
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: #aaaaaa;
+}
+
+.register-info-content h1 {
+    margin: 14px 0;
+    font-size: 36px;
+    line-height: 1.25;
+}
+
+.register-info-content > p {
+    font-size: 14px;
+    color: #bbbbbb;
+}
+
+.register-benefits {
+    margin-top: 28px;
+}
+
+.register-benefits div {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.register-benefits p {
+    margin: 0;
+    font-size: 14px;
+    color: #dddddd;
+}
+
+.register-info-footer {
+    position: relative;
+    z-index: 1;
+    margin: 0;
+    font-size: 12px;
+    color: #777777;
+}
+
+.register-circle {
+    position: absolute;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 50%;
+}
+
+.circle-one {
+    width: 380px;
+    height: 380px;
+    right: -140px;
+    bottom: -120px;
+}
+
+.circle-two {
+    width: 220px;
+    height: 220px;
+    right: 40px;
+    bottom: 60px;
+}
+
+.register-form-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 24px;
+}
+
+.register-card {
+    width: 100%;
+    max-width: 440px;
+}
+
+.register-heading h2 {
+    margin: 0 0 6px;
+    font-size: 28px;
+}
+
+.register-heading p {
+    margin-bottom: 24px;
+    font-size: 14px;
+    color: var(--muted);
+}
+
+.register-success {
+    display: flex;
+    gap: 10px;
+    padding: 12px 16px;
+    margin-bottom: 16px;
+    font-size: 14px;
+    background: var(--green-bg);
+    color: var(--green);
+    border-left: 3px solid var(--green);
+}
+
+.register-error {
+    padding: 12px 16px;
+    margin-bottom: 16px;
+    font-size: 14px;
+    background: var(--red-bg);
+    color: var(--red);
+    border-left: 3px solid var(--red);
+}
+
+.register-field {
+    margin-bottom: 16px;
+}
+
+.register-field label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.register-field input {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid var(--line);
+    outline: none;
+    background: var(--white);
+}
+
+.register-field input:focus {
+    border-color: var(--ink);
+}
+
+.register-field input.input-error {
+    border-color: var(--red);
+}
+
+.register-field small {
+    display: block;
+    margin-top: 4px;
+    font-size: 12px;
+    color: var(--red);
+}
+
+.register-password-box {
+    position: relative;
+}
+
+.register-password-box input {
+    padding-right: 60px;
+}
+
+.register-password-box .password-toggle {
+    position: absolute;
+    top: 50%;
+    right: 14px;
+    transform: translateY(-50%);
+}
+
+.password-strength {
+    margin-top: 8px;
+    font-size: 12px;
+    color: var(--muted);
+}
+
+.strength-bar {
+    height: 4px;
+    margin-bottom: 4px;
+}
+
+.strength-weak {
+    width: 33%;
+    background: var(--red);
+}
+
+.strength-medium {
+    width: 66%;
+    background: #d97706;
+}
+
+.strength-strong {
+    width: 100%;
+    background: var(--green);
+}
+
+.register-submit {
+    width: 100%;
+    margin-top: 6px;
+}
+
+.register-login-link {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: var(--muted);
+}
+
+.register-login-link a {
+    color: var(--ink);
+    font-weight: 400;
+    text-decoration: underline;
+}
+
+.register-terms {
+    margin-top: 14px;
+    text-align: center;
+    font-size: 12px;
+    color: var(--muted);
+}
+
+.register-terms a {
+    text-decoration: underline;
+}
+@media (max-width: 800px) {
+    .register-page {
+        grid-template-columns: 1fr;
+    }
+
+    .register-info {
+        display: none;
+    }
+}

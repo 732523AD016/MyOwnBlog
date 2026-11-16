@@ -1,0 +1,243 @@
+
+.admin-posts-page {
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 32px 24px 60px;
+}
+
+.admin-posts-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.admin-posts-header h1 {
+    margin-bottom: 4px;
+    font-size: 30px;
+}
+
+.admin-posts-header p {
+    margin: 0;
+    color: var(--muted);
+}
+
+.admin-message {
+    margin-bottom: 16px;
+}
+
+.admin-post-stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.admin-post-stats .admin-stat-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+}
+
+.admin-post-stats .admin-stat-card span {
+    font-size: 13px;
+    color: var(--muted);
+}
+
+.admin-post-stats .admin-stat-card strong {
+    font-size: 28px;
+}
+
+.admin-posts-panel {
+    background: var(--white);
+    border: 1px solid var(--line);
+}
+
+.admin-post-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px solid var(--line);
+    padding: 0 12px;
+}
+
+.admin-post-tabs button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 16px 14px;
+    border: none;
+    border-bottom: 2px solid transparent;
+    background: none;
+    color: var(--muted);
+    font-weight: 400;
+}
+
+.admin-post-tabs button:hover {
+    color: var(--ink);
+}
+
+.admin-post-tabs button.active {
+    color: var(--ink);
+    border-bottom-color: var(--ink);
+}
+
+.admin-post-tabs button span {
+    padding: 1px 8px;
+    background: var(--soft);
+    font-size: 12px;
+}
+
+.admin-post-filters {
+    display: flex;
+    gap: 12px;
+    padding: 18px;
+}
+
+.admin-search-box {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0 14px;
+    border: 1px solid var(--line);
+}
+
+.admin-search-box:focus-within {
+    border-color: var(--ink);
+}
+
+.admin-search-box input {
+    flex: 1;
+    padding: 11px 0;
+    border: none;
+    outline: none;
+}
+
+.admin-post-filters select {
+    width: 200px;
+}
+
+.admin-empty-state {
+    padding: 60px 20px;
+    text-align: center;
+    color: var(--muted);
+}
+
+.admin-empty-icon {
+    font-size: 32px;
+}
+
+.admin-article-cell {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    min-width: 280px;
+}
+
+.admin-article-cell img,
+.admin-no-image {
+    width: 64px;
+    height: 48px;
+    flex-shrink: 0;
+    object-fit: cover;
+}
+
+.admin-article-cell div:last-child {
+    display: flex;
+    flex-direction: column;
+}
+
+.admin-article-cell small {
+    color: var(--muted);
+}
+
+.admin-schedule-date {
+    display: block;
+    margin-top: 4px;
+    font-size: 11px;
+    color: var(--muted);
+}
+
+.featured-toggle {
+    padding: 5px 12px;
+    border: 1px solid var(--line);
+    background: var(--white);
+    color: var(--muted);
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+.featured-toggle:hover {
+    border-color: var(--ink);
+    color: var(--ink);
+}
+
+.featured-toggle.selected {
+    background: var(--ink);
+    border-color: var(--ink);
+    color: var(--white);
+}
+
+.admin-action-buttons {
+    display: flex;
+    gap: 6px;
+}
+
+.admin-action-buttons a,
+.admin-action-buttons button {
+    padding: 5px 12px;
+    border: 1px solid var(--line);
+    background: var(--white);
+    color: var(--text);
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+.admin-action-buttons a:hover,
+.admin-action-buttons button:hover {
+    border-color: var(--ink);
+    color: var(--ink);
+}
+
+.admin-delete-action:hover {
+    border-color: var(--red) !important;
+    background: var(--red-bg) !important;
+    color: var(--red) !important;
+}
+
+.admin-posts-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 18px;
+    border-top: 1px solid var(--line);
+    font-size: 13px;
+    color: var(--muted);
+}
+
+.admin-posts-footer button {
+    border: none;
+    background: none;
+    font-weight: 400;
+    color: var(--ink);
+}
+@media (max-width: 800px) {
+    .admin-post-stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .admin-post-filters {
+        flex-direction: column;
+    }
+
+    .admin-post-filters select {
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .admin-posts-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }}

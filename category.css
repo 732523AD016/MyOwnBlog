@@ -1,0 +1,121 @@
+
+.category-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px 60px;
+}
+
+.category-hero {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    align-items: center;
+    gap: 40px;
+    padding: 56px 0 40px;
+    border-bottom: 1px solid var(--line);
+}
+
+.category-hero h1 {
+    margin-bottom: 12px;
+    font-size: 44px;
+    line-height: 1.2;
+}
+
+.category-hero h1 span {
+    color: var(--muted);
+}
+
+.category-hero-content > p {
+    max-width: 520px;
+    color: var(--muted);
+}
+
+.category-count {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 20px;
+    padding: 8px 16px;
+    border: 1px solid var(--ink);
+    font-size: 14px;
+}
+
+.category-hero-icon {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.category-icon-card {
+    width: 100%;
+    max-width: 280px;
+    padding: 32px;
+    background: var(--ink);
+    color: var(--white);
+}
+
+.category-icon-card span {
+    font-size: 26px;
+}
+
+.category-icon-card h2 {
+    margin: 6px 0 0;
+    font-size: 24px;
+}
+
+.category-breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 18px 0 28px;
+    font-size: 13px;
+    color: var(--muted);
+}
+
+.category-breadcrumb a:hover {
+    color: var(--ink);
+    text-decoration: underline;
+}
+
+.category-breadcrumb strong {
+    color: var(--ink);
+}
+
+.category-total {
+    font-size: 13px;
+    color: var(--muted);
+}
+
+.category-message {
+    padding: 40px 0;
+    text-align: center;
+    color: var(--muted);
+}
+
+.category-message.error {
+    color: var(--red);
+}
+
+.category-bottom {
+    margin-top: 56px;
+    padding: 48px 24px;
+    text-align: center;
+    background: var(--soft);
+}
+
+.category-bottom p {
+    margin-bottom: 20px;
+    color: var(--muted);
+}
+@media (max-width: 800px) {
+    .category-hero {
+        grid-template-columns: 1fr;
+    }
+
+    .category-hero-icon {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .category-hero h1 {
+        font-size: 30px;
+    }}
