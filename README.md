@@ -44,7 +44,7 @@ Features
  Previous and next blog navigation
  Blog view counter
  SEO title and meta description
-- Scheduled publishing
+ Scheduled publishing
 
  Admin Features
 
@@ -172,7 +172,7 @@ Create a .env file inside the backend folder.
 
 env
 PORT=5000
-MONGO_URI=your_mongodb_connection
+MONGO_URI=my_mongodb_connection
 JWT_SECRET=my secret key
 FRONTEND_URL=http://localhost:5173
 
